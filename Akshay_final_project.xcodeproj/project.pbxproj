@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A100429294693350080367E /* ToastSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4A100428294693350080367E /* ToastSwiftUI */; };
 		4A4A19482936C130005A9D15 /* Akshay_final_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A19472936C130005A9D15 /* Akshay_final_projectApp.swift */; };
 		4A4A194A2936C130005A9D15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A19492936C130005A9D15 /* ContentView.swift */; };
 		4A4A194C2936C131005A9D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4A194B2936C131005A9D15 /* Assets.xcassets */; };
@@ -14,6 +15,15 @@
 		4A4A19592936C131005A9D15 /* Akshay_final_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A19582936C131005A9D15 /* Akshay_final_projectTests.swift */; };
 		4A4A19632936C131005A9D15 /* Akshay_final_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A19622936C131005A9D15 /* Akshay_final_projectUITests.swift */; };
 		4A4A19652936C131005A9D15 /* Akshay_final_projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A19642936C131005A9D15 /* Akshay_final_projectUITestsLaunchTests.swift */; };
+		4A4A19742936C1B8005A9D15 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A19732936C1B8005A9D15 /* ListItemView.swift */; };
+		4A4A19762936C1C8005A9D15 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A19752936C1C8005A9D15 /* AboutView.swift */; };
+		4A4A19782936C1D5005A9D15 /* UserSearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A19772936C1D5005A9D15 /* UserSearchResultsView.swift */; };
+		4A4A197A2936C1E4005A9D15 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A19792936C1E4005A9D15 /* UserDetailsView.swift */; };
+		4A4A197C2936C1F5005A9D15 /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A197B2936C1F5005A9D15 /* AppSettingsView.swift */; };
+		4A4A197E2936C211005A9D15 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A197D2936C211005A9D15 /* UserModel.swift */; };
+		4A4E174429400B4300B26F92 /* UserDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E174329400B4300B26F92 /* UserDetailsModel.swift */; };
+		4AB86EA3293818A900FA892A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4AB86EA2293818A900FA892A /* Alamofire */; };
+		4AB86EA529381E1900FA892A /* UserResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB86EA429381E1900FA892A /* UserResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,14 @@
 		4A4A195E2936C131005A9D15 /* Akshay_final_projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Akshay_final_projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A4A19622936C131005A9D15 /* Akshay_final_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Akshay_final_projectUITests.swift; sourceTree = "<group>"; };
 		4A4A19642936C131005A9D15 /* Akshay_final_projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Akshay_final_projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A4A19732936C1B8005A9D15 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		4A4A19752936C1C8005A9D15 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		4A4A19772936C1D5005A9D15 /* UserSearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchResultsView.swift; sourceTree = "<group>"; };
+		4A4A19792936C1E4005A9D15 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		4A4A197B2936C1F5005A9D15 /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
+		4A4A197D2936C211005A9D15 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4A4E174329400B4300B26F92 /* UserDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsModel.swift; sourceTree = "<group>"; };
+		4AB86EA429381E1900FA892A /* UserResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A100429294693350080367E /* ToastSwiftUI in Frameworks */,
+				4AB86EA3293818A900FA892A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +114,8 @@
 		4A4A19462936C130005A9D15 /* Akshay_final_project */ = {
 			isa = PBXGroup;
 			children = (
+				4A4A19722936C176005A9D15 /* Views */,
+				4A4A19712936C16B005A9D15 /* Models */,
 				4A4A19472936C130005A9D15 /* Akshay_final_projectApp.swift */,
 				4A4A19492936C130005A9D15 /* ContentView.swift */,
 				4A4A194B2936C131005A9D15 /* Assets.xcassets */,
@@ -127,6 +149,28 @@
 			path = Akshay_final_projectUITests;
 			sourceTree = "<group>";
 		};
+		4A4A19712936C16B005A9D15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A4A197D2936C211005A9D15 /* UserModel.swift */,
+				4AB86EA429381E1900FA892A /* UserResponseModel.swift */,
+				4A4E174329400B4300B26F92 /* UserDetailsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A4A19722936C176005A9D15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A4A19732936C1B8005A9D15 /* ListItemView.swift */,
+				4A4A19752936C1C8005A9D15 /* AboutView.swift */,
+				4A4A19772936C1D5005A9D15 /* UserSearchResultsView.swift */,
+				4A4A19792936C1E4005A9D15 /* UserDetailsView.swift */,
+				4A4A197B2936C1F5005A9D15 /* AppSettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +187,10 @@
 			dependencies = (
 			);
 			name = Akshay_final_project;
+			packageProductDependencies = (
+				4AB86EA2293818A900FA892A /* Alamofire */,
+				4A100428294693350080367E /* ToastSwiftUI */,
+			);
 			productName = Akshay_final_project;
 			productReference = 4A4A19442936C130005A9D15 /* Akshay_final_project.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +263,10 @@
 				Base,
 			);
 			mainGroup = 4A4A193B2936C130005A9D15;
+			packageReferences = (
+				4AB86EA1293818A900FA892A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4A100427294693350080367E /* XCRemoteSwiftPackageReference "ToastSwiftUI" */,
+			);
 			productRefGroup = 4A4A19452936C130005A9D15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +309,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4A19762936C1C8005A9D15 /* AboutView.swift in Sources */,
+				4A4A19782936C1D5005A9D15 /* UserSearchResultsView.swift in Sources */,
+				4A4A197E2936C211005A9D15 /* UserModel.swift in Sources */,
+				4A4A197C2936C1F5005A9D15 /* AppSettingsView.swift in Sources */,
+				4A4A19742936C1B8005A9D15 /* ListItemView.swift in Sources */,
 				4A4A194A2936C130005A9D15 /* ContentView.swift in Sources */,
+				4AB86EA529381E1900FA892A /* UserResponseModel.swift in Sources */,
+				4A4E174429400B4300B26F92 /* UserDetailsModel.swift in Sources */,
+				4A4A197A2936C1E4005A9D15 /* UserDetailsView.swift in Sources */,
 				4A4A19482936C130005A9D15 /* Akshay_final_projectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +643,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A100427294693350080367E /* XCRemoteSwiftPackageReference "ToastSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huynguyencong/ToastSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.4;
+			};
+		};
+		4AB86EA1293818A900FA892A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A100428294693350080367E /* ToastSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A100427294693350080367E /* XCRemoteSwiftPackageReference "ToastSwiftUI" */;
+			productName = ToastSwiftUI;
+		};
+		4AB86EA2293818A900FA892A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AB86EA1293818A900FA892A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A4A193C2936C130005A9D15 /* Project object */;
 }
