@@ -26,6 +26,8 @@ struct ContentView: View {
                 Text("Git Searcher").font(.title)
                 HStack{
                     TextField("Enter name", text: $searchText)
+						.autocorrectionDisabled()
+						.textInputAutocapitalization(.never)
                         .onChange(of: searchText, perform:{ _ in
                             noResultsError = false
                         }).textFieldStyle(.roundedBorder)
