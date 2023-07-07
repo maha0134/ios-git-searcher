@@ -9,21 +9,27 @@ import SwiftUI
 
 struct UserSearchResultsView: View {
     //MARK: properties
-    let userList:[User]
+    let userList: [User]
     
     var body: some View {
-        NavigationStack{
-            List(userList){ user in
-                NavigationLink(destination:UserDetailsView(url:user.url)){
-                    ListItemView(user:user)
+		
+        NavigationStack {
+			
+            List(userList) { user in
+                NavigationLink(destination: UserDetailsView(url: user.url)) {
+					
+                    ListItemView(user: user)
                 }
             }
         }
     }
 }
 
-//struct UserSearchResultsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        UserSearchResultsView()
-//    }
-//}
+struct UserSearchResultsView_Previews: PreviewProvider {
+    static var previews: some View {
+		UserSearchResultsView(userList:
+								[.init(id: 1, username: "maha0134", type: "User", avatarURL: "", followersURL: "", reposURL: "", url: ""),
+								.init(id: 1, username: "maha0134", type: "User", avatarURL: "", followersURL: "", reposURL: "", url: "")
+								])
+    }
+}

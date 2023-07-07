@@ -17,6 +17,7 @@ struct AboutView: View {
 		if vSizeClass == .regular && hSizeClass == .compact {
 			//portrait mode in phone
 			VStack(spacing:15) {
+				
 				AsyncImage(url: URL(string: "https://avatars.githubusercontent.com/u/90360626?v=4"))
 				
 				Text("Git Searcher v1.0.0")
