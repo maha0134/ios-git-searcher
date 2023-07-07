@@ -26,7 +26,7 @@ struct ContentView: View {
 				Text("Git Searcher")
 					.font(.title)
 				
-				HStack{
+				HStack {
 					TextField("Enter name", text: $searchText)
 						.autocorrectionDisabled()
 						.textInputAutocapitalization(.never)
@@ -36,14 +36,14 @@ struct ContentView: View {
 						.textFieldStyle(.roundedBorder)
 						.border(.gray)
 					
-					Button(action: {
-						if(!searchText.isEmpty){
+					Button {
+						if !searchText.isEmpty {
 							searchGitHub(search:searchText)
 						}
-					},label: {
+					} label: {
 						Image(systemName: "magnifyingglass").bold().font(.title2)
-					})
-					.frame(width: 45,height: 40)
+					}
+					.frame(width: 45, height: 40)
 					.background(.blue)
 					.foregroundColor(.white)
 					.cornerRadius(5)
@@ -77,21 +77,21 @@ struct ContentView: View {
 			})
 			.toolbar(content: {
 				ToolbarItem(placement: .navigationBarTrailing) {
-					Button(action: {
+					Button {
 						settingsViewIsPresenting.toggle()
-					},label: {
+					} label: {
 						Image(systemName:"gear")
 							.font(.title2)
-					})
+					}
 				}
 				
 				ToolbarItem(placement:.navigationBarLeading) {
-					Button(action:{
+					Button {
 						aboutViewIsPresenting.toggle()
-					}, label: {
+					} label: {
 						Image(systemName: "person.crop.circle.fill")
 							.font(.title2)
-					})
+					}
 				}
 			})
 		}
@@ -116,7 +116,7 @@ extension ContentView{
 		let searchQuery = URLQueryItem(name: "q", value: "\(search)\(additionalParameters)")
 		let resultsPerPageQuery = URLQueryItem(name: "per_page", value: "\(resultsPerPage)")
 		
-		myUrlComponents.queryItems = [searchQuery,resultsPerPageQuery]
+		myUrlComponents.queryItems = [searchQuery, resultsPerPageQuery]
 		myUrlComponents.path = "/search/users"
 		
 		AF.request(myUrlComponents)
@@ -126,8 +126,7 @@ extension ContentView{
 				}
 			}
 			.validate(statusCode: 200..<300)
-			.responseDecodable(of: UserResponseModel.self){
-				response in
+			.responseDecodable(of: UserResponseModel.self) { response in
 				switch response.result {
 					case .failure(let err):
 						if let msg = err.errorDescription {

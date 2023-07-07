@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct UserResponseModel: Codable{
-    let totalCount:Int
-    let incompleteResults:Bool
+struct UserResponseModel: Codable {
+    let totalCount: Int
+    let incompleteResults: Bool
     let data: [User]
     
-    enum CodingKeys:String, CodingKey{
+    enum CodingKeys: String, CodingKey {
         case totalCount = "total_count"
         case incompleteResults = "incomplete_results"
         case data = "items"
