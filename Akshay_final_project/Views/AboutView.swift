@@ -14,57 +14,14 @@ struct AboutView: View {
 	@Environment(\.verticalSizeClass) var vSizeClass
 	
 	var body: some View {
-		if vSizeClass == .regular && hSizeClass == .compact {
-			//portrait mode in phone
-			VStack(spacing:15) {
+		if vSizeClass == .regular && hSizeClass == .compact ||
+			vSizeClass == .regular && hSizeClass == .regular {
+			//portrait mode in phone/tablet
+			VStack(spacing: 15) {
 				
 				AsyncImage(url: URL(string: "https://avatars.githubusercontent.com/u/90360626?v=4"))
 				
-				Text("Git Searcher v1.0.0")
-					.font(.title)
-					.fontWeight(.bold)
-				
-				HStack {
-					Text("Created by: ")
-					Text("Akshay Mahajan")
-						.fontWeight(.bold)
-				}
-				
-				HStack {
-					Image(systemName: "envelope")
-					Text("maha0134@algonquinlive.com")
-				}
-				
-				HStack {
-					Image(systemName: "globe")
-					Text("https://portfolio-akshay-mahajan.netlify.app/")
-				}
-				
-				Spacer()
-			}
-			.font(.title3)
-			.padding()
-			
-		} else if vSizeClass == .regular && hSizeClass == .regular {
-			//tablets
-			VStack(spacing:15) {
-				AsyncImage(url: URL(string: "https://avatars.githubusercontent.com/u/90360626?v=4"))
-				Text("Git Searcher v1.0.0")
-					.font(.title).fontWeight(.bold)
-				HStack {
-					Text("Created by: ")
-					Text("Akshay Mahajan").fontWeight(.bold)
-				}
-				
-				HStack {
-					Image(systemName: "envelope")
-					Text("maha0134@algonquinlive.com")
-				}
-				
-				HStack {
-					Image(systemName: "globe")
-					Text("https://portfolio-akshay-mahajan.netlify.app/")
-				}
+				AboutDetailsView()
 			}
 			.font(.title3)
 			.padding()
@@ -74,31 +31,9 @@ struct AboutView: View {
 			HStack {
 				AsyncImage(url: URL(string: "https://avatars.githubusercontent.com/u/90360626?v=4"))
 				
-				VStack(spacing:15) {
-					Text("Git Searcher v1.0.0")
-						.font(.title)
-						.fontWeight(.bold)
-					
-					HStack {
-						Text("Created by: ")
-						Text("Akshay Mahajan")
-							.fontWeight(.bold)
-					}
-					
-					HStack {
-						Image(systemName: "envelope")
-						Text("maha0134@algonquinlive.com")
-					}
-					
-					HStack {
-						Image(systemName: "globe")
-						Text("https://portfolio-akshay-mahajan.netlify.app/")
-					}
-					
-					Spacer()
-				}
-				.font(.title3)
-				.padding()
+				AboutDetailsView()
+					.font(.title3)
+					.padding()
 			}
 			.padding()
 		}

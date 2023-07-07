@@ -23,6 +23,7 @@
 		4A4A197E2936C211005A9D15 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A197D2936C211005A9D15 /* UserModel.swift */; };
 		4A4E174429400B4300B26F92 /* UserDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E174329400B4300B26F92 /* UserDetailsModel.swift */; };
 		4AA60B912A58088A00A2FC63 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA60B902A58088A00A2FC63 /* DetailsView.swift */; };
+		4AA60B932A5810C200A2FC63 /* AboutDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA60B922A5810C200A2FC63 /* AboutDetailsView.swift */; };
 		4AB86EA3293818A900FA892A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4AB86EA2293818A900FA892A /* Alamofire */; };
 		4AB86EA529381E1900FA892A /* UserResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB86EA429381E1900FA892A /* UserResponseModel.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		4A4A197D2936C211005A9D15 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4A4E174329400B4300B26F92 /* UserDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsModel.swift; sourceTree = "<group>"; };
 		4AA60B902A58088A00A2FC63 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		4AA60B922A5810C200A2FC63 /* AboutDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDetailsView.swift; sourceTree = "<group>"; };
 		4AB86EA429381E1900FA892A /* UserResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +169,7 @@
 				4A4A19732936C1B8005A9D15 /* ListItemView.swift */,
 				4A4A19752936C1C8005A9D15 /* AboutView.swift */,
 				4A4A19772936C1D5005A9D15 /* UserSearchResultsView.swift */,
+				4AA60B922A5810C200A2FC63 /* AboutDetailsView.swift */,
 				4A4A19792936C1E4005A9D15 /* UserDetailsView.swift */,
 				4A4A197B2936C1F5005A9D15 /* AppSettingsView.swift */,
 				4AA60B902A58088A00A2FC63 /* DetailsView.swift */,
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A4A19762936C1C8005A9D15 /* AboutView.swift in Sources */,
+				4AA60B932A5810C200A2FC63 /* AboutDetailsView.swift in Sources */,
 				4A4A19782936C1D5005A9D15 /* UserSearchResultsView.swift in Sources */,
 				4A4A197E2936C211005A9D15 /* UserModel.swift in Sources */,
 				4A4A197C2936C1F5005A9D15 /* AppSettingsView.swift in Sources */,
