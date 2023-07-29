@@ -1,5 +1,6 @@
 # iOS Git Searcher
 <img src="ios-git-searcher-home.png" align="right" width="250">
+
 ## Description
 The iOS Git Searcher is a SwiftUI-based app designed to search for profiles on GitHub. Leveraging the latest features of SwiftUI, the app provides a user-friendly interface for querying GitHub profiles. By utilizing Alamofire, it performs fetches and retrieves results based on query parameters that can be easily customized by the user.
 
